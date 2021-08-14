@@ -1,0 +1,16 @@
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\bin\Debug\RightTextBoxForWpfApplication.exe.config
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\bin\Debug\RightTextBoxForWpfApplication.exe
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\bin\Debug\RightTextBoxForWpfApplication.pdb
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\bin\Debug\WindowsFormsControlLibraryForRichTextbox.dll
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\bin\Debug\WindowsFormsControlLibraryForRichTextbox.pdb
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication.csprojResolveAssemblyReference.cache
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\MainWindow.g.cs
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\App.g.cs
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication_MarkupCompile.cache
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication_MarkupCompile.lref
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\MainWindow.baml
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication.g.resources
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication.Properties.Resources.resources
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication.csproj.GenerateResource.Cache
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication.exe
+c:\users\cefalo\documents\visual studio 2015\Projects\RightTextBoxForWpfApplication\RightTextBoxForWpfApplication\obj\Debug\RightTextBoxForWpfApplication.pdb

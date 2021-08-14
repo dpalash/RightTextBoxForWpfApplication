@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A7A95CF-C156-4E25-AED4-E42C8CCECEDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsControlLibraryForRichTextbox</RootNamespace>
+    <AssemblyName>WindowsFormsControlLibraryForRichTextbox</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="HtmlTextboxControl\FrmToolbar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HtmlTextboxControl\FrmToolbar.designer.cs">
+      <DependentUpon>FrmToolbar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlTextboxControl\HtmlTextbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HtmlTextboxControl\HtmlTextbox.designer.cs">
+      <DependentUpon>HtmlTextbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HtmlTextboxControl\HtmlUtility\SysUtil.cs" />
+    <Compile Include="HtmlTextboxControl\HtmlUtility\XHTMLResolver.cs" />
+    <Compile Include="HtmlTextboxControl\HtmlUtility\XMLUtil.cs" />
+    <Compile Include="HtmlTextboxControl\ToolbarStyles.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HtmlTextboxControl\Resources\boldhs.png" />
+    <Content Include="HtmlTextboxControl\Resources\CopyHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\CutHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\EditCodeHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\FontDialogHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\FontHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlContent.htm" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\tidy.exe" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-attribs-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-base-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-bdo-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-blkphras-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-blkpres-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-blkstruct-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-charent-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-csismap-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-datatypes-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-edit-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-events-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-form-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-framework-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-hypertext-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-image-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-inlphras-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-inlpres-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-inlstruct-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-inlstyle-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-link-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-list-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-meta-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-object-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-param-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-pres-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-qname-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-ruby-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-script-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-ssismap-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-struct-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-style-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-table-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-text-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\HtmlResources\xhtml11-model-1.mod" />
+    <Content Include="HtmlTextboxControl\Resources\image_add.png" />
+    <Content Include="HtmlTextboxControl\Resources\IndentHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\ItalicHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\List_BulletsHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\List_NumberedHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\OutdentHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\PasteHS.png" />
+    <Content Include="HtmlTextboxControl\Resources\Underlined_font.png" />
+    <Content Include="HtmlTextboxControl\WinformHtmlTextboxIco.bmp" />
+    <Content Include="NeptuneIcon.ico" />
+    <Content Include="NeptuneIconEllipse.ico" />
+    <Content Include="Resources\007_PrintView_32x32_72.png" />
+    <Content Include="Resources\112_DownArrowShort_Green.ico" />
+    <Content Include="Resources\112_Plus_Green.ico" />
+    <Content Include="Resources\112_RefreshArrow_Blue.ico" />
+    <Content Include="Resources\112_Tick_Green.ico" />
+    <Content Include="Resources\16x16_delete.png" />
+    <Content Include="Resources\16x16_edit.png" />
+    <Content Include="Resources\1ntmtracing,-50x35.gif" />
+    <Content Include="Resources\1ntmtracing.gif" />
+    <Content Include="Resources\1tracingprpaper,50x70.gif" />
+    <Content Include="Resources\1tracingprpaper.gif" />
+    <Content Include="Resources\1tracingprpapercollatetext_1205x842.png" />
+    <Content Include="Resources\2tracings,-50x72.gif" />
+    <Content Include="Resources\2tracings.gif" />
+    <Content Include="Resources\2tracingscollatetext_1205x842.png" />
+    <Content Include="Resources\add.gif" />
+    <Content Include="Resources\addAll.gif" />
+    <Content Include="Resources\Add_18x18.gif" />
+    <Content Include="Resources\ADLL_logo.png" />
+    <Content Include="Resources\adll_trans.png" />
+    <Content Include="Resources\Adobe_30x30.png" />
+    <Content Include="Resources\ADP_ADLL_CoverageMap.gif" />
+    <Content Include="Resources\ADP_ADRS6_CoverageMap.gif" />
+    <Content Include="Resources\ADP_ADRS6_Coverage_small.jpg" />
+    <Content Include="Resources\ADP_ATT_CoverageMap.gif" />
+    <Content Include="Resources\adp_trans_2_130x130.png" />
+    <Content Include="Resources\ADP_TT_Coverage_small.jpg" />
+    <Content Include="Resources\ADP_Update.png" />
+    <Content Include="Resources\ADRS6.ico" />
+    <Content Include="Resources\ADRS6_logo.png" />
+    <Content Include="Resources\Approach.gif" />
+    <Content Include="Resources\areas, att.PNG" />
+    <Content Include="Resources\arrow_down.png" />
+    <Content Include="Resources\arrow_left_20x20.png" />
+    <Content Include="Resources\arrow_left_22x20.png" />
+    <Content Include="Resources\arrow_right_20x20.png" />
+    <Content Include="Resources\arrow_right_22x20.png" />
+    <Content Include="Resources\arrow_up.png" />
+    <Content Include="Resources\ATT_logo.png" />
+    <Content Include="Resources\att_logo_cmyk_blue_white_130x130.jpg" />
+    <Content Include="Resources\Authorized-Distributor-rgb.jpg" />
+    <Content Include="Resources\backup.png" />
+    <Content Include="Resources\back_icon.png" />
+    <Content Include="Resources\berth-moring.png" />
+    <Content Include="Resources\Berthing.gif" />
+    <Content Include="Resources\BlankMedia.ico" />
+    <None Include="Resources\tidy.exe" />
+    <None Include="Resources\PasteHS.png" />
+    <None Include="Resources\OutdentHS.png" />
+    <None Include="Resources\List_NumberedHS.png" />
+    <None Include="Resources\List_BulletsHS.png" />
+    <None Include="Resources\ItalicHS.png" />
+    <None Include="Resources\IndentHS.png" />
+    <None Include="Resources\FontHS.png" />
+    <None Include="Resources\FontDialogHS.png" />
+    <None Include="Resources\EditCodeHS.png" />
+    <None Include="Resources\CutHS.png" />
+    <None Include="Resources\CopyHS.png" />
+    <None Include="Resources\boldhs.png" />
+    <Content Include="Resources\boltbadge.png" />
+    <Content Include="Resources\bookmark-add.gif" />
+    <Content Include="Resources\bookmark-add.png" />
+    <Content Include="Resources\bookmark-icon-small.gif" />
+    <Content Include="Resources\bookmarks-icon.png" />
+    <Content Include="Resources\bookshelf.png" />
+    <Content Include="Resources\BPFlag.png" />
+    <Content Include="Resources\BPLogo.png" />
+    <Content Include="Resources\browse-folder.gif" />
+    <Content Include="Resources\browse_search_10x15.png" />
+    <Content Include="Resources\burn_cd_nero_24x23.jpg" />
+    <Content Include="Resources\buttonbkg.gif" />
+    <Content Include="Resources\CalendarIcon.png" />
+    <Content Include="Resources\Cancel.png" />
+    <Content Include="Resources\Cancel_18x18.gif" />
+    <Content Include="Resources\cdburn.ico" />
+    <Content Include="Resources\checknowknapp_40x21.png" />
+    <Content Include="Resources\check_now_35x35.png" />
+    <Content Include="Resources\check_now_50x50.png" />
+    <Content Include="Resources\Coastal.gif" />
+    <Content Include="Resources\copy.png" />
+    <Content Include="Resources\decrypted.png" />
+    <Content Include="Resources\DeleteRed.png" />
+    <Content Include="Resources\DeleteRedSmall.png" />
+    <Content Include="Resources\delete_folder, 22x22.jpg" />
+    <Content Include="Resources\document_icon.gif" />
+    <Content Include="Resources\document_icon_large.png" />
+    <Content Include="Resources\downloading-icon.gif" />
+    <Content Include="Resources\downloading_18x181.gif" />
+    <Content Include="Resources\email_import_ikon_35x35.gif" />
+    <Content Include="Resources\email_import_ikon_50x50.png" />
+    <Content Include="Resources\enavigator_20x130.png" />
+    <Content Include="Resources\encrypted.png" />
+    <Content Include="Resources\entm.png" />
+    <Content Include="Resources\error.bmp" />
+    <Content Include="Resources\exit.png" />
+    <Content Include="Resources\fail.png" />
+    <Content Include="Resources\filetransfer-icon.png" />
+    <Content Include="Resources\FINDFILE16.gif" />
+    <Content Include="Resources\fitHeight.gif" />
+    <Content Include="Resources\fitWidth.gif" />
+    <Content Include="Resources\folio.png" />
+    <Content Include="Resources\General.gif" />
+    <Content Include="Resources\globeGIFanime.gif" />
+    <Content Include="Resources\GradientButtonSmall.png" />
+    <Content Include="Resources\green.gif" />
+    <Content Include="Resources\grid-delete-black-2.png" />
+    <Content Include="Resources\grid-delete-black.png" />
+    <Content Include="Resources\grid-delete.png" />
+    <Content Include="Resources\grid-edit-black.png" />
+    <Content Include="Resources\grid-edit.png" />
+    <Content Include="Resources\Harbour.gif" />
+    <Content Include="Resources\Help.png" />
+    <Content Include="Resources\history.ico" />
+    <Content Include="Resources\home_ikon_2_30x30.png" />
+    <Content Include="Resources\hourglass-exclamation.png" />
+    <Content Include="Resources\hourglass.png" />
+    <None Include="Resources\Underlined_font.png" />
+    <None Include="Resources\xhtml.soc" />
+    <None Include="Resources\xhtml1.dcl" />
+    <None Include="Resources\xhtml11-model-1.mod" />
+    <None Include="Resources\xhtml-text-1.mod" />
+    <None Include="Resources\xhtml-table-1.mod" />
+    <None Include="Resources\xhtml-style-1.mod" />
+    <None Include="Resources\xhtml-struct-1.mod" />
+    <None Include="Resources\xhtml-ssismap-1.mod" />
+    <None Include="Resources\xhtml-script-1.mod" />
+    <None Include="Resources\xhtml-ruby-1.mod" />
+    <None Include="Resources\xhtml-qname-1.mod" />
+    <None Include="Resources\xhtml-pres-1.mod" />
+    <None Include="Resources\xhtml-param-1.mod" />
+    <None Include="Resources\xhtml-object-1.mod" />
+    <None Include="Resources\xhtml-meta-1.mod" />
+    <None Include="Resources\xhtml-list-1.mod" />
+    <None Include="Resources\xhtml-link-1.mod" />
+    <None Include="Resources\xhtml-inlstyle-1.mod" />
+    <None Include="Resources\xhtml-inlstruct-1.mod" />
+    <None Include="Resources\xhtml-inlpres-1.mod" />
+    <None Include="Resources\xhtml-inlphras-1.mod" />
+    <None Include="Resources\xhtml-image-1.mod" />
+    <None Include="Resources\xhtml-hypertext-1.mod" />
+    <None Include="Resources\xhtml-framework-1.mod" />
+    <None Include="Resources\xhtml-form-1.mod" />
+    <None Include="Resources\xhtml-events-1.mod" />
+    <None Include="Resources\xhtml-edit-1.mod" />
+    <None Include="Resources\xhtml-datatypes-1.mod" />
+    <None Include="Resources\xhtml-csismap-1.mod" />
+    <None Include="Resources\xhtml-charent-1.mod" />
+    <None Include="Resources\xhtml-blkstruct-1.mod" />
+    <None Include="Resources\xhtml-blkpres-1.mod" />
+    <None Include="Resources\xhtml-blkphras-1.mod" />
+    <None Include="Resources\xhtml-bdo-1.mod" />
+    <None Include="Resources\xhtml-base-1.mod" />
+    <None Include="Resources\xhtml-attribs-1.mod" />
+    <None Include="Resources\HtmlContent.htm" />
+    <Content Include="Resources\Image1.bmp" />
+    <Content Include="Resources\image_add.png" />
+    <Content Include="Resources\img-notavail.gif" />
+    <Content Include="Resources\info.png" />
+    <Content Include="Resources\info_ikon.png" />
+    <Content Include="Resources\knewsticker_28x28.png" />
+    <Content Include="Resources\konqsidebar_news_20x20.png" />
+    <Content Include="Resources\left_arrow_2_30x17.png" />
+    <Content Include="Resources\left_arrow_2_30x171.png" />
+    <Content Include="Resources\left_arrow_double_2_30x25.png" />
+    <Content Include="Resources\left_arrow_double_2_30x251.png" />
+    <Content Include="Resources\LicenseAboutToExpire.gif" />
+    <Content Include="Resources\LicenseAboutToExpire_18x18.gif" />
+    <Content Include="Resources\LicenseExpired.gif" />
+    <Content Include="Resources\LicenseExpired_18x18.gif" />
+    <Content Include="Resources\LicenseOk.gif" />
+    <Content Include="Resources\LicenseOk_18x18.gif" />
+    <Content Include="Resources\Lights.ico" />
+    <Content Include="Resources\loading-new.gif" />
+    <Content Include="Resources\loading.gif" />
+    <Content Include="Resources\LogoVertical.png" />
+    <Content Include="Resources\manage_24x24.png" />
+    <Content Include="Resources\mapClearRoute.gif" />
+    <Content Include="Resources\mapDraw.gif" />
+    <Content Include="Resources\mapPan.gif" />
+    <Content Include="Resources\mappe_ikon_22x22.png" />
+    <Content Include="Resources\mapReset.png" />
+    <Content Include="Resources\mapSelect.gif" />
+    <Content Include="Resources\mapTrackSelect.gif" />
+    <Content Include="Resources\mapTrackZoom.gif" />
+    <Content Include="Resources\mapZoomIn.png" />
+    <Content Include="Resources\mapZoomOut.png" />
+    <Content Include="Resources\mynet.png" />
+    <Content Include="Resources\neptune-maskot.png" />
+    <Content Include="Resources\NeptuneLogoHorizontal.png" />
+    <Content Include="Resources\network_20x20.png" />
+    <Content Include="Resources\NewUpdateAvailable.gif" />
+    <Content Include="Resources\next.PNG" />
+    <Content Include="Resources\openfolder 22x22.jpg" />
+    <Content Include="Resources\Overview.gif" />
+    <Content Include="Resources\Pause.png" />
+    <Content Include="Resources\Pause_18x18.gif" />
+    <Content Include="Resources\Planning.gif" />
+    <Content Include="Resources\position_marker.gif" />
+    <Content Include="Resources\prev.PNG" />
+    <Content Include="Resources\print-icon.png" />
+    <Content Include="Resources\printer.png" />
+    <Content Include="Resources\processing.gif" />
+    <Content Include="Resources\progressBlue.gif" />
+    <Content Include="Resources\publications.png" />
+    <Content Include="Resources\questionmark.png" />
+    <Content Include="Resources\reconnecting.gif" />
+    <Content Include="Resources\red.gif" />
+    <Content Include="Resources\refresh.gif" />
+    <Content Include="Resources\remote.png" />
+    <Content Include="Resources\remove.gif" />
+    <Content Include="Resources\removeAll.gif" />
+    <Content Include="Resources\RepeatedWave.png" />
+    <Content Include="Resources\reports.png" />
+    <Content Include="Resources\reports_new.png" />
+    <Content Include="Resources\Resume.png" />
+    <Content Include="Resources\right_arrow_2_30x17.png" />
+    <Content Include="Resources\right_arrow_2_30x171.png" />
+    <Content Include="Resources\right_arrow_double_2_30x25.png" />
+    <Content Include="Resources\route-icon.gif" />
+    <Content Include="Resources\rss_10x15.png" />
+    <Content Include="Resources\RunKeyWiz.ico" />
+    <Content Include="Resources\save file, 22x22.jpg" />
+    <Content Include="Resources\save-as.png" />
+    <Content Include="Resources\search-folder.png" />
+    <Content Include="Resources\search-icon.png" />
+    <Content Include="Resources\SeaWare-stormgeocomp-175px.jpg" />
+    <Content Include="Resources\Seawarescreenshot.gif" />
+    <Content Include="Resources\sendemail2.png" />
+    <Content Include="Resources\setup.png" />
+    <Content Include="Resources\shoppingcart.png" />
+    <Content Include="Resources\spinnerlarge.gif" />
+    <Content Include="Resources\split.png" />
+    <Content Include="Resources\statustext_bg.gif" />
+    <Content Include="Resources\subscription.png" />
+    <Content Include="Resources\success.png" />
+    <Content Include="Resources\TotalTide.ico" />
+    <Content Include="Resources\tr_email.gif" />
+    <Content Include="Resources\Unknown.gif" />
+    <Content Include="Resources\Unlicensed.gif" />
+    <Content Include="Resources\Unlicensed_18x18.gif" />
+    <Content Include="Resources\unmanage_24x24.png" />
+    <Content Include="Resources\update.png" />
+    <Content Include="Resources\UpdateWiz.ico" />
+    <Content Include="Resources\upgrade1.png" />
+    <Content Include="Resources\upgrade_35x35.gif" />
+    <Content Include="Resources\UpToDate.gif" />
+    <Content Include="Resources\wait-icon.gif" />
+    <Content Include="Resources\waiting.png" />
+    <Content Include="Resources\Warning.png" />
+    <Content Include="Resources\warning_16x16.png" />
+    <Content Include="Resources\Web.png" />
+    <Content Include="Resources\yellow.gif" />
+    <Content Include="Resources\zoom-in.png" />
+    <Content Include="Resources\zoom-out.png" />
+    <Content Include="Resources\zoom_in_2_30x30.png" />
+    <Content Include="Resources\zoom_in_2_30x301.png" />
+    <Content Include="Resources\zoom_in_30x301.png" />
+    <Content Include="Resources\zoom_out_2_30x30.png" />
+    <Content Include="Resources\zoom_out_2_30x301.png" />
+    <None Include="Resources\xhtml-lat1.ent" />
+    <None Include="Resources\xhtml-lat11.ent" />
+    <None Include="Resources\xhtml-special.ent" />
+    <None Include="Resources\xhtml-special11.ent" />
+    <None Include="Resources\xhtml-symbol.ent" />
+    <None Include="Resources\xhtml-symbol11.ent" />
+    <None Include="Resources\xhtml1-frameset.dtd" />
+    <None Include="Resources\xhtml1-strict.dtd" />
+    <None Include="Resources\xhtml1-transitional.dtd" />
+    <None Include="Resources\xhtml11.dtd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-lat1.ent" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-lat11.ent" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-special.ent" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-special11.ent" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-symbol.ent" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml-symbol11.ent" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml.soc" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml1-frameset.dtd" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml1-strict.dtd" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml1-transitional.dtd" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml1.dcl" />
+    <None Include="HtmlTextboxControl\Resources\HtmlResources\xhtml11.dtd" />
+    <None Include="HtmlTextboxControl\WinformHtmlTextboxIco.pdn" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="HtmlTextboxControl\FrmToolbar.resx">
+      <DependentUpon>FrmToolbar.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HtmlTextboxControl\HtmlTextbox.resx">
+      <DependentUpon>HtmlTextbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
